@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIT 109 Assignment 4</title>
+  <style>
+    *{
+  box-sizing:border-box;
+  padding:  0;
+  margin: 0;
+}
+.form {
+    width: 580px;
+    height: 430px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -190px;
+    margin-bottom: 20px;
+    border: 10px solid #001f0d;
+   padding: .9em;
+   background:#17994d;
+}
+textarea{
+  overflow-y: scroll;
+}
+
+button{
+  width:5em;
+  height:1.9em;
+  border: 2px solid #001f0d;
+  transition-duration: 0.2s;
+}
+button:hover{
+  background:#001f0d;
+}
+a{
+  color:#17994d;
+  text-decoration:none;
+}
+td{
+  padding-left:1em;
+  padding-bottom:.2em;
+}
+.footer{
+  font-weight:bold;
+}
+input{
+  border: .5px solid #001f0d;
+}
+radio::before{
+  content: " ";
+  border:2px solid #001f0d;
+}
+  </style>
+</head>
+<body >
+  
+  <div class="form" >
+     <form action="">
+    <div class="data" >
+      <h4><u>Personal Details</u></h4>
+      <table>
+  <tr>
+    <td> <label for="name" class="namel">Name </label></td>
+    <td><input type="text"id="name" name="name"></td>
+    <td><label for="age">Age  </label></td>
+    <td><input type="text"id="age" name="age"> </td>
+  </tr>
+  <tr>
+    <td> <label for="tel" class="tell">Tel  </label></td>
+    <td><input type="tel"id="tel" name="tel"></td>
+    <td><label for="address">Address  </label></td>
+    <td><input type="text"id="address" name="address"></td>   </tr>
+  <tr>
+    <td><label for="city" class="cityl">City</label></td>
+    <td><select name="city" id="city">
+      <option value="nairobi">Nairobi</option>
+      <option value="kisumu">Kisumu</option>
+      <option value="mombasa">Mombasa</option>
+      <option value="nakuru">Nakuru</option>
+      </select>
+    </td>
+    <td><label for="country">Country</label></td>
+    <td>
+    <select name="country" id="country">
+      <option value="kenya">Kenya</option>
+      <option value="uk">UK</option>
+      <option value="india">India</option>
+      <option value="japan">Japan</option>
+    </select>
+    </td>
+  </tr>
+  </table>
+   
+    
+    <label for="gender">Gender:</label>
+    
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    
+    <br>
+      <br>
+    <div class="about" >
+      <legend>About Yourself</legend>
+    <div class="about" align="center">
+      <textarea name="about" id="about" cols="70" rows="12" ></textarea>
+      <br>
+      <button ><a href="#">Send</a></button> <button><a href="#">Cancel</a></button>
+    </div>
+   
+  </form>
+ 
+      <br>
+  <div class="footer">
+    <p>&copy; Delbert Kipyegon J31/3581/2021</p>
+  </div>
+  </div>
+ 
+</body>
+</html>
